@@ -1,4 +1,46 @@
 h1 {
 	font-family: Helvetica;
-	text-align: left;
+	text-align: center;
+}
+
+div.candles {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+div.candle {
+	height: 150px;
+	width: 20px;
+	background-color: #6DCCB7;
+	float: left;
+}
+
+#middle-child {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+div.layer {
+	height: 150px; 
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#strawbel {
+	background-color: #FF938D;
+	border-radius: 100px;
+	clear: left;
+}
+
+#bunil {
+	background-color: #FFF08D;
+	border-radius: 100px;
+	height: 75px;
+}
+
+#choco {
+	background-color: #804F22;
+	border-radius: 100px;
 }
