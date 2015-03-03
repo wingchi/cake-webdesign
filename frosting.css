@@ -3,17 +3,55 @@ h1 {
 	text-align: center;
 }
 
+p {
+	font-family: Helvetica;
+	text-align: center;
+}
+
 div.candles {
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
 }
 
+div.flame {
+	height: 20px;
+	width: 20px;
+	background: linear-gradient(45deg, orange, yellow);
+	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transform: rotate(-45deg);
+	margin-bottom: 3px;
+}
+
 div.candle {
 	height: 150px;
 	width: 20px;
-	background-color: #6DCCB7;
 	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+div.candle:before {
+	background: url('teal-stripes.png');
+	background-size: 50%;
+	content: "";
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: -55px;
+	transform: rotate(45deg);
+}
+
+#furst {
+	clear: left;
+}
+
+#mid-flame {
+	margin-left: 120px;
+	margin-right: 120px;
 }
 
 #middle-child {
