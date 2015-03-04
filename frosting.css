@@ -1,11 +1,20 @@
 h1 {
 	font-family: Helvetica;
 	text-align: center;
+	color: #A06E40;
 }
 
 p {
 	font-family: Helvetica;
 	text-align: center;
+	color: #FA928D;
+}
+
+#flameo {
+	font-family: Helvetica;
+	text-align: center;
+	color: #A06E40;
+	margin-top: 10px;
 }
 
 div.candles {
@@ -14,16 +23,33 @@ div.candles {
 	width: 300px;
 }
 
+div.stupid-div {
+	height: 23px;
+	width: 20px;
+	float: left;
+	position: relative;
+}
+
+div.wick {
+	height: 15px;
+	width: 5px;
+	background-color: #FFF6D5;
+	position: absolute;
+	left: 7.5px;
+	bottom:0px;
+	z-index: -1;
+}
+
 div.flame {
 	height: 20px;
 	width: 20px;
-	background: linear-gradient(45deg, orange, yellow);
-	float: left;
+	background: linear-gradient(45deg, rgba(255, 146, 0, .5), rgba(255, 231, 0, .3));
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	transform: rotate(-45deg);
 	margin-bottom: 3px;
+	display: none;
 }
 
 div.candle {
@@ -35,7 +61,7 @@ div.candle {
 }
 
 div.candle:before {
-	background: url('teal-stripes.png');
+	background: url('PastelPolkadots.jpg');
 	background-size: 50%;
 	content: "";
 	height: 200px;
@@ -67,18 +93,28 @@ div.layer {
 }
 
 #strawbel {
-	background-color: #FF938D;
+	background-color: #FFB7B3;
 	border-radius: 100px;
 	clear: left;
 }
 
 #bunil {
-	background-color: #FFF08D;
+	background-color: #FFF6B9;
 	border-radius: 100px;
 	height: 75px;
 }
 
 #choco {
-	background-color: #804F22;
+	background-color: #A06E40;
 	border-radius: 100px;
+}
+
+#fixed-div {
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: pink;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
 }

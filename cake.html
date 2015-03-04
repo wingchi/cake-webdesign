@@ -3,6 +3,7 @@
 <head>
   <title>Let's Eat a Macaron!</title>
   <link rel="stylesheet" href="frosting.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -11,14 +12,29 @@
   <p>How odd for it to have candles...</p>
 
   <div class="candles">
-    <div class="flame">
+    <div class="stupid-div">
+      <div class="flame">
+      </div>
+
+      <div class="wick">
+      </div>
     </div>
 
-    <div class="flame" id="mid-flame">
-    </div>
+    <div class="stupid-div" id="mid-flame"> 
+      <div class="flame">
+      </div>
 
-    <div class="flame">
-    </div>
+      <div class="wick">
+      </div>
+    </div>  
+
+    <div class="stupid-div">
+      <div class="flame">
+      </div>
+
+      <div class="wick">
+      </div>
+    </div>  
 
     <div class="candle" id="furst">
     </div>
@@ -39,6 +55,18 @@
 
   <div class="layer" id="choco">
   </div>
+
+  <div id="fixed-div">
+    <p id="flameo">Flameo, hotman</p>
+  </div>
+
+  <script type="text/javascript">
+    $("#fixed-div").click(function() {
+      $(".flame").fadeIn(2000);
+      $(".flame").fadeOut(2000);
+      $(".flame").fadeIn(2000);
+    });
+  </script>
 
 </body>
 
