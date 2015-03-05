@@ -10,13 +10,6 @@ p {
 	color: #FA928D;
 }
 
-#flameo {
-	font-family: Helvetica;
-	text-align: center;
-	color: #A06E40;
-	margin-top: 10px;
-}
-
 div.candles {
 	margin-left: auto;
 	margin-right: auto;
@@ -109,12 +102,27 @@ div.layer {
 	border-radius: 100px;
 }
 
-#fixed-div {
-	height: 50px;
-	width: 100px;
-	border-radius: 10px;
-	background-color: pink;
+#match-head {
+	height: 20px;
+	width: 18px;
+	background-color: #FA928D;
+	border-radius: 9px;
+	position: absolute;
+	top: -20px;
+	left: -2.5px;
+	border-bottom: 2px solid #EC8782;
+	border-right: 2px solid #EC8782;
+}
+
+#match {
+	height: 150px;
+	width: 15px;
+	border-radius: 3px;
+	background-color: #FFF6B9;
 	position: fixed;
-	right: 0px;
-	bottom: 0px;
+	right: 75px;
+	bottom: 50px;
+	border-bottom: 3px solid #FFF09E;
+	border-right: 2px solid #FFF09E;
+	border-left: 2px solid #FFFAD8;
 }
