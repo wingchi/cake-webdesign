@@ -61,11 +61,31 @@
     </div>
   </div>
 
+  <div id="pinwheel">
+    <div id="blade1">
+    </div>
+    <div id="blade2">
+    </div>
+    <div id="blade3">
+    </div>
+    <div id="blade4">
+    </div>
+  </div>
+
   <script type="text/javascript">
+    var candleLit = false;
+
     $("#match").click(function() {
-      $(".flame").fadeIn(2000);
-      $(".flame").fadeOut(2000);
-      $(".flame").fadeIn(2000);
+      if (candleLit == true) {
+        $(".flame").fadeOut(2000);
+        $("#pinwheel").hide();
+        candleLit = false;
+      }
+      else {
+        $(".flame").fadeIn(2000);
+        $("#pinwheel").show();
+        candleLit = true;
+      }
     });
   </script>
 

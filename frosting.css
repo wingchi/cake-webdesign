@@ -126,3 +126,60 @@ div.layer {
 	border-right: 2px solid #FFF09E;
 	border-left: 2px solid #FFFAD8;
 }
+
+#pinwheel {
+	position: fixed;
+	right: 38.5px;
+	bottom: 170px;
+	height: 88px;
+	width: 88px;
+	display: none;
+}
+
+#blade1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 0px;
+	border-top: 22px solid pink;
+	border-bottom: 22px solid blue;
+	border-left: 22px solid transparent;
+	border-right: 22px solid pink;
+}
+
+#blade2 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 0px;
+	border-top: 22px solid pink;
+	border-bottom: 22px solid transparent;
+	border-left: 22px solid pink;
+	border-right: 22px solid blue;
+}
+
+#blade3 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 0px;
+	width: 0px;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid pink;
+	border-left: 22px solid blue;
+	border-right: 22px solid pink;
+}
+
+#blade4 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 0px;
+	border-top: 22px solid blue;
+	border-bottom: 22px solid pink;
+	border-left: 22px solid pink;
+	border-right: 22px solid transparent;
+}
