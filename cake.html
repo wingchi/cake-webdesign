@@ -91,8 +91,12 @@
         candleState = 3;
       }
       else if (candleState === 3) {
+        $("#pinwheel").css("-webkit-animation", "spin 2s ease-in-out 1");
         $(".flame").fadeOut(1000);
-        $("#pinwheel").hide();
+        setTimeout(function(){
+          $("#pinwheel").css("-webkit-animation", "");
+          $("#pinwheel").hide();
+        }, 2000);
         candleState = 0;
       }
 
