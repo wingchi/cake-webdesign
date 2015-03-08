@@ -13,7 +13,7 @@
 
   <div class="candles">
     <div class="stupid-div">
-      <div class="flame">
+      <div class="flame" id="flame1">
       </div>
 
       <div class="wick">
@@ -21,7 +21,7 @@
     </div>
 
     <div class="stupid-div" id="mid-flame"> 
-      <div class="flame">
+      <div class="flame" id="flame2">
       </div>
 
       <div class="wick">
@@ -29,7 +29,7 @@
     </div>  
 
     <div class="stupid-div">
-      <div class="flame">
+      <div class="flame" id="flame3">
       </div>
 
       <div class="wick">
@@ -74,18 +74,40 @@
 
   <script type="text/javascript">
     var candleLit = false;
+    var candleState = 0;
 
     $("#match").click(function() {
-      if (candleLit == true) {
-        $(".flame").fadeOut(2000);
-        $("#pinwheel").hide();
-        candleLit = false;
+      if (candleState === 0) {
+        $("#flame1").fadeIn(1000);
+        candleState = 1;
       }
-      else {
-        $(".flame").fadeIn(2000);
+      else if (candleState === 1) {
+        $("#flame2").fadeIn(1000);
+        candleState = 2;
+      }
+      else if (candleState === 2) {
+        $("#flame3").fadeIn(1000);
         $("#pinwheel").show();
-        candleLit = true;
+        candleState = 3;
       }
+      else if (candleState === 3) {
+        $(".flame").fadeOut(1000);
+        $("#pinwheel").hide();
+        candleState = 0;
+      }
+
+
+
+      // if (candleLit === true) {
+      //   $(".flame").fadeOut(2000);
+      //   $("#pinwheel").hide();
+      //   candleLit = false;
+      // }
+      // else {
+      //   $(".flame").fadeIn(2000);
+      //   $("#pinwheel").show();
+      //   candleLit = true;
+      // }
     });
   </script>
 

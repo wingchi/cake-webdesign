@@ -142,10 +142,10 @@ div.layer {
 	top: 0px;
 	height: 0px;
 	width: 0px;
-	border-top: 22px solid pink;
-	border-bottom: 22px solid blue;
+	border-top: 22px solid #FFB7B3;
+	border-bottom: 22px solid #D87C77;
 	border-left: 22px solid transparent;
-	border-right: 22px solid pink;
+	border-right: 22px solid #FFB7B3;
 }
 
 #blade2 {
@@ -154,10 +154,10 @@ div.layer {
 	bottom: 0px;
 	height: 0px;
 	width: 0px;
-	border-top: 22px solid pink;
+	border-top: 22px solid #FFB7B3;
 	border-bottom: 22px solid transparent;
-	border-left: 22px solid pink;
-	border-right: 22px solid blue;
+	border-left: 22px solid #FFB7B3;
+	border-right: 22px solid #D87C77;
 }
 
 #blade3 {
@@ -167,9 +167,9 @@ div.layer {
 	height: 0px;
 	width: 0px;
 	border-top: 22px solid transparent;
-	border-bottom: 22px solid pink;
-	border-left: 22px solid blue;
-	border-right: 22px solid pink;
+	border-bottom: 22px solid #FFB7B3;
+	border-left: 22px solid #D87C77;
+	border-right: 22px solid #FFB7B3;
 }
 
 #blade4 {
@@ -178,8 +178,8 @@ div.layer {
 	bottom: 0px;
 	height: 0px;
 	width: 0px;
-	border-top: 22px solid blue;
-	border-bottom: 22px solid pink;
-	border-left: 22px solid pink;
+	border-top: 22px solid #D87C77;
+	border-bottom: 22px solid #FFB7B3;
+	border-left: 22px solid #FFB7B3;
 	border-right: 22px solid transparent;
 }
