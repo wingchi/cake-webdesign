@@ -71,13 +71,17 @@
   </div>
 
   <div id="pinwheel">
-    <div id="blade1">
+    <div id="blades">
+      <div id="blade1">
+      </div>
+      <div id="blade2">
+      </div>
+      <div id="blade3">
+      </div>
+      <div id="blade4">
+      </div>
     </div>
-    <div id="blade2">
-    </div>
-    <div id="blade3">
-    </div>
-    <div id="blade4">
+    <div id="pinwheel-stick">
     </div>
   </div>
 
@@ -96,15 +100,15 @@
       }
       else if (candleState === 2) {
         $("#flame3").fadeIn(1000);
-        $("#pinwheel").show();
+        $("#blades").show();
         candleState = 3;
       }
       else if (candleState === 3) {
-        $("#pinwheel").css("-webkit-animation", "spin 2s ease-in-out 1");
+        $("#blades").css("-webkit-animation", "spin 2s ease-in-out 1");
         $(".flame").fadeOut(1000);
         setTimeout(function(){
-          $("#pinwheel").css("-webkit-animation", "");
-          $("#pinwheel").hide();
+          $("#blades").css("-webkit-animation", "");
+          // $("#blades").hide();
         }, 2000);
         candleState = 0;
       }
@@ -113,12 +117,12 @@
 
       // if (candleLit === true) {
       //   $(".flame").fadeOut(2000);
-      //   $("#pinwheel").hide();
+      //   $("#blades").hide();
       //   candleLit = false;
       // }
       // else {
       //   $(".flame").fadeIn(2000);
-      //   $("#pinwheel").show();
+      //   $("#blades").show();
       //   candleLit = true;
       // }
     });

@@ -77,14 +77,14 @@ div.candle {
 }
 
 div.candle:before {
-	background: url('mini-mint-dots.jpg');
-	background-size: 50%;
+	background: url('blue-stripes.jpg');
+	background-size: 100%;
 	content: "";
 	height: 200px;
 	width: 200px;
 	position: absolute;
 	left: -55px;
-	/*transform: rotate(45deg);*/
+	transform: rotate(45deg);
 }
 
 #furst {
@@ -171,19 +171,19 @@ div.layer {
 	border-radius: 9px;
 	position: absolute;
 	top: -20px;
-	left: -2.5px;
+	left: -4px;
 	border-bottom: 2px solid #EC8782;
 	border-right: 2px solid #EC8782;
 }
 
 #match {
 	height: 150px;
-	width: 15px;
+	width: 10px;
 	border-radius: 3px;
 	background-color: #FFF6B9;
 	position: fixed;
-	right: 75px;
-	bottom: 50px;
+	left: 75px;
+	top: 200px;
 	border-bottom: 3px solid #FFF09E;
 	border-right: 2px solid #FFF09E;
 	border-left: 2px solid #FFFAD8;
@@ -191,12 +191,31 @@ div.layer {
 
 #pinwheel {
 	position: fixed;
-	right: 38.5px;
+	left: 38.5px;
 	bottom: 170px;
 	height: 88px;
 	width: 88px;
 	/*-webkit-animation: spin 2s ease-in-out infinite;*/
-	display: none;
+	/*display: none;*/
+}
+
+/*QUESTION*/
+#blades {
+	position: fixed;
+	left: 38.5px;
+	bottom: 170px;
+	height: 88px;
+	width: 88px;
+}
+
+#pinwheel-stick {
+	position: absolute;
+	height: 150px;
+	width: 5px;
+	background-color: #777;
+	top: 44px;
+	left: 43px;
+	z-index: -1;
 }
 
 @-webkit-keyframes spin {
