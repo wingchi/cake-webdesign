@@ -77,7 +77,7 @@ div.candle {
 }
 
 div.candle:before {
-	background: url('blue-stripes.jpg');
+	background: url('images/blue-stripes.jpg');
 	background-size: 100%;
 	content: "";
 	height: 200px;
@@ -199,11 +199,7 @@ div.layer {
 	/*display: none;*/
 }
 
-/*QUESTION*/
 #blades {
-	position: fixed;
-	left: 38.5px;
-	bottom: 170px;
 	height: 88px;
 	width: 88px;
 }
